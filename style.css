@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+}
+
+.container {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    max-width: 450px;
+    background:linear-gradient(#E4A5FF, #FFAAC9);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+
+.temperature-icon {
+    font-style: 10px;
+    color: #fff;
+}
+
+h1 {
+    color: #321E1E;
+    letter-spacing: 1.2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+#celcius,
+#Fehrenheit,
+#Kelvin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+input {
+    flex: 5;
+    height: 60px;
+    font-style: 15px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+}
+
+.icon {
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-style: 15px;
+    background: #4d5964;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    padding: 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* /for chrome, Safari, Edge, Opera */
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+/* for Mozila firefox  */
+input{
+    -moz-appearance: textfield;
+
+}
+.button{
+    margin-top: 25px;
+    text-align: center;
+} 
+
+.button button{
+
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button button:hover{
+    background: #000;
+    color: #fff;
+
+}
